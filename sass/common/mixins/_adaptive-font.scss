@@ -1,0 +1,6 @@
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: map-get($adaptive-font-containers, _max) - map-get($adaptive-font-containers, _min);
+  $minWidth: map-get($adaptive-font-containers, _min);
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth}px) / #{$maxWidth}));
+}

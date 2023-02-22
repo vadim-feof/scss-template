@@ -1,0 +1,14 @@
+// Import fonts, media breakpoints, mixins, typography, variables, reset
+@import "common/index";
+
+// Import wrapper, container
+@import "layouts/layouts";
+
+// Import header, footer, modal and etc.
+@import "components/index";
+
+// Import ui components
+@import "components/ui/index";
+
+// Import pages styles
+@import "pages/index";

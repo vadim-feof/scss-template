@@ -1,0 +1,35 @@
+@mixin laptop() {
+  @media (max-width: map-get($breakpoints, laptop)) {
+    @content
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: map-get($breakpoints, tablet)) {
+    @content
+  }
+}
+
+@mixin tablet-s() {
+  @media (max-width: map-get($breakpoints, tablet-s)) {
+    @content
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: map-get($breakpoints, mobile)) {
+    @content
+  }
+}
+
+@mixin max-width($bp: 0) {
+  @media (max-width: $bp) {
+    @content
+  }
+}
+
+@mixin min-width($bp: 0) {
+  @media (min-width: $bp) {
+    @content
+  }
+}

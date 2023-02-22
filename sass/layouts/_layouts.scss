@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: map-get($containers, desktop) + px;
+
+  @media (max-width: 1600px) {
+    max-width: map-get($containers, other) + px;
+  }
+}

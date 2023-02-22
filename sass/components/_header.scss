@@ -1,0 +1,15 @@
+.header {
+  z-index: 1000;
+}
+
+@include laptop {
+}
+
+@include tablet {
+}
+
+@include tablet-s {
+}
+
+@include mobile {
+}
